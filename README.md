@@ -1,1 +1,1 @@
-# responsive-design
+# Curso de Responsive Design: Maquetacion Mobile First
