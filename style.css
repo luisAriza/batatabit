@@ -8,7 +8,7 @@
 :root {
     /* Colores */
     --bitcoin-orange: #F7931A;
-    --soft-orange; #FFE9D5;
+    --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
@@ -26,6 +26,70 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
-body {
-    font-size: 1.6rem;
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 32rem;
+    text-align: center;
+    background:  linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+}
+header img {
+    width: 16rem;
+    height: 2.4rem;
+    margin-top: 60px;
+    align-self: center;
+}
+.header--tittle-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 21.8rem;
+    margin-top: 35px;
+    text-align: center;
+    align-self: center;
+}
+.header--tittle-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--tittle-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--tittle-container .header--button {
+    position: absolute;
+    left: calc(50% - 114.5px);
+    top: 27rem;
+    display: block;
+    margin-top: 2rem;
+    padding: 15px;
+    width: 229px;
+    height: 4.8rem;
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: .8rem;
+    margin-left: 9px;
+    background-image: url('./assets/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
