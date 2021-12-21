@@ -26,6 +26,8 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+
+/* header */
 header {
     position: relative;
     display: flex;
@@ -61,7 +63,7 @@ header img {
 .header--tittle-container p {
     margin-top: 25px;
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
@@ -92,4 +94,148 @@ header img {
     background-image: url('./assets/icons/down-arrow.svg');
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* main */
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+    min-width: 320px;
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-exchange-container--tittle {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container .background-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-image: url('./assets/img/bitcoin.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2 {
+    margin-bottom: 25px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* table */
+.main-currency-table {
+    width: 70%;
+    min-width: 224px;
+    max-width: 500px;
+    height: 275px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+.main-currency-table .currency-table--tittle {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 22px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: #FF9536;
+    text-align: left;
+}
+.currency-table--container {
+    width: 90%;
+    min-width: 210px;
+    max-width: 230px;
+    height: 160px;
+    margin: 0 auto;
+}
+.currency-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.currency-table--container td {
+    width: 50%;
+    height: 25%;
+    text-align: left;
+    padding-left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+    background-color: var(--just-white);
+}
+.currency-table--container .table__top-left {
+    border-radius: 7px 0 0 0;
+}
+.currency-table--container .table__top-right {
+    border-radius: 0 7px 0 0;
+}
+.currency-table--container .table__bottom-left {
+    border-radius: 0 0 0 7px;
+}
+.currency-table--container .table__bottom-right {
+    border-radius: 0 0 7px 0;
+}
+.currency-table--container .table__right {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7rem;
+    font-weight: 400;
+    color: #757575;
+}
+.currency-table--container .trending-up {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    margin-right: 8px;
+    background-image: url('./assets/icons/trending-up.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.currency-table--container .trending-down {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 12px;
+    margin-right: 8px;
+    background-image: url('./assets/icons/trending-down.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.currency-table--date {
+    width: 200px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px 4px 8px 4px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.currency-table--date p {
+    font-size: 12px;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--warm-black);
+    text-align: center;
 }
