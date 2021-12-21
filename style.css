@@ -14,6 +14,7 @@
     --warm-black: #201E1C;
     --black: #282623;
     --grey: #BABABA;
+    --warm-grey: #808080;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
 }
@@ -29,30 +30,27 @@ html {
 
 /* header */
 header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
     min-width: 320px;
+    max-width: 450px;
+    margin: 0 auto;
     height: 32rem;
     text-align: center;
-    background:  linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+    background: linear-gradient(207.8deg, #201E1C 25.69%, #F7931A 100%);
 }
 header img {
     width: 16rem;
     height: 2.4rem;
     margin-top: 60px;
-    align-self: center;
 }
 .header--tittle-container {
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
+    max-width: 350px;
     height: 21.8rem;
+    margin: 0 auto;
     margin-top: 35px;
     text-align: center;
-    align-self: center;
 }
 .header--tittle-container h1 {
     font-size: 2.4rem;
@@ -61,21 +59,22 @@ header img {
     color: var(--just-white);
 }
 .header--tittle-container p {
-    margin-top: 25px;
+    margin-top: 28px;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.8rem;
     color: var(--soft-orange);
 }
 .header--tittle-container .header--button {
+    display: block;
+    margin: 0 auto;
     position: absolute;
     left: calc(50% - 114.5px);
     top: 27rem;
-    display: block;
     margin-top: 2rem;
     padding: 15px;
     width: 229px;
-    height: 4.8rem;
+    height: auto;
     background-color: var(--off-white);
     /* Sombra */
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -86,7 +85,7 @@ header img {
     text-decoration: none;
     color: var(--warm-black);
 }
-.header--button span {
+.header--button .down-arrow {
     display: inline-block;
     width: 13px;
     height: .8rem;
@@ -100,25 +99,30 @@ header img {
 main {
     width: 100%;
     height: auto;
-    background-color: var(--off-white);
     min-width: 320px;
 }
+
+/* Section #1 */
 .main-exchange-container {
     width: 100%;
+    min-width: 320px;
+    max-width: 450px;
     height: auto;
+    margin: 0 auto;
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 2.5rem;
     text-align: center;
+    background-color: var(--off-white);
 }
 .main-exchange-container--tittle {
     width: 90%;
     min-width: 288px;
-    max-width: 900px;
+    max-width: 350px;
     margin: 0 auto;
 }
 .main-exchange-container .background-img {
-    width: 200px;
-    height: 200px;
+    width: 20rem;
+    height: 20rem;
     margin: 0 auto;
     margin-bottom: 40px;
     background-image: url('./assets/img/bitcoin.svg');
@@ -140,19 +144,19 @@ main {
     line-height: 1.8rem;
     color: #757575;
 }
+
 /* table */
 .main-currency-table {
     width: 70%;
     min-width: 224px;
-    max-width: 500px;
-    height: 275px;
+    max-width: 304px;
+    height: 270px;
     margin: 0 auto;
+    margin-top: 45px;
     font-family: 'Inter', sans-serif;
 }
 .main-currency-table .currency-table--tittle {
-    margin-bottom: 10px;
-    padding-top: 15px;
-    padding-left: 22px;
+    margin: 0 15px 9px 15px;
     font-family: 'DM Sans', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
@@ -163,7 +167,7 @@ main {
 .currency-table--container {
     width: 90%;
     min-width: 210px;
-    max-width: 230px;
+    max-width: 250px;
     height: 160px;
     margin: 0 auto;
 }
@@ -224,18 +228,110 @@ main {
     background-repeat: no-repeat;
 }
 .currency-table--date {
-    width: 200px;
+    width: 205px;
     height: 30px;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 4.5rem;
     padding: 8px 4px 8px 4px;
     background-color: var(--soft-orange);
     border-radius: 8px;
 }
 .currency-table--date p {
     font-size: 12px;
-    line-height: 1.5rem;
+    line-height: 15px;
     font-weight: 500;
-    color: var(--warm-black);
+    color: var(--black);
     text-align: center;
 }
+.main-exchange-container .batata {
+    position: absolute;
+    left: calc(50% - 20px);
+    display: block;
+    margin-top: 1.4rem;
+    width: 4rem;
+    height: 2.4rem;
+    background-image: url('./assets/icons/batata.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Section #2 */
+.main-product-detail {
+    width: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    height: auto;
+    background-color: var(--warm-black);
+}
+.main-product-detail div {
+    width: 90%;
+    min-width: 288px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.main-product-detail h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--just-white);
+}
+.main-product-detail p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--warm-grey);
+}
+.product-cards--container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+/* Cards */
+.product-cards--container .product-detail--card {
+    min-width: 288px;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 16px;
+    padding: 14px 14px 22px 1.6rem;
+    background-color: var(--black);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+.product-cards--container .icon-card {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.product-cards--container .clock {
+    background-image: url('./assets/icons/clock.svg');
+}
+.product-cards--container .eye {
+    background-image: url('./assets/icons/eye.svg');
+}
+.product-cards--container .dollar-sign {
+    background-image: url('./assets/icons/dollar-sign.svg');
+}
+.product-cards--container .check-circle {
+    background-image: url('./assets/icons/check-circle.svg');
+}
+.product-cards--container .product--card-tittle {
+    margin: 10px 1px;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--just-white);
+}
+
+/* Section #3 */
