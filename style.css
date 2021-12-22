@@ -9,12 +9,12 @@
     /* Colores */
     --bitcoin-orange: #F7931A;
     --soft-orange: #FFE9D5;
-    --secondary-blue: #1A9AF7;
+    --secondary-blue: #0066af;
     --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
     --black: #282623;
     --grey: #BABABA;
-    --warm-grey: #808080;
+    --warm-grey: #b8b8b8;
     --off-white: #FAF8F7;
     --just-white: #FFFFFF;
 }
@@ -32,7 +32,7 @@ html {
 header {
     width: 100%;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 700px;
     margin: 0 auto;
     height: 32rem;
     text-align: center;
@@ -46,7 +46,7 @@ header img {
 .header--tittle-container {
     width: 90%;
     min-width: 288px;
-    max-width: 350px;
+    max-width: 600px;
     height: 21.8rem;
     margin: 0 auto;
     margin-top: 35px;
@@ -106,7 +106,7 @@ main {
 .main-exchange-container {
     width: 100%;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 700px;
     height: auto;
     margin: 0 auto;
     padding-top: 60px;
@@ -117,7 +117,7 @@ main {
 .main-exchange-container--tittle {
     width: 90%;
     min-width: 288px;
-    max-width: 350px;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 45px;
 }
@@ -143,7 +143,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #757575;
+    color: #525252;
 }
 
 /* tables */
@@ -152,13 +152,14 @@ main {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    padding: 0px 30px;
 }
 .main-table {
     scroll-snap-align: center;
     width: 70%;
     min-width: 224px;
     max-width: 304px;  
-    margin: 0px 0px 20px;
+    margin: 0px 20px 30px;
     font-family: 'Inter', sans-serif;
 }
 .main-table .currency-table--tittle {
@@ -167,7 +168,7 @@ main {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.3rem;
-    color: #FF9536;
+    color: #da6600;
     text-align: left;
 }
 .main-table .commission-table--tittle {
@@ -198,7 +199,7 @@ main {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.9rem;
-    color: #B5B0AC;
+    color: #757575;
     background-color: var(--just-white);
 }
 .table-container .table__top-left {
@@ -291,7 +292,7 @@ main {
 .main-product-detail {
     width: 100%;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 700px;
     margin: 0 auto;
     padding-bottom: 30px;
     height: auto;
@@ -300,7 +301,7 @@ main {
 .main-product-detail div {
     width: 90%;
     min-width: 288px;
-    max-width: 350px;
+    max-width: 600px;
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 2rem;
@@ -322,14 +323,14 @@ main {
 .product-cards--container {
     width: 90%;
     min-width: 288px;
-    max-width: 350px;
+    max-width: 550px;
     margin: 0 auto;
     padding-top: 10px;
 }
 /* Cards */
 .product-cards--container .product-detail--card {
     min-width: 288px;
-    max-width: 350px;
+    max-width: 600px;
     height: auto;
     margin-bottom: 16px;
     padding: 14px 14px 22px 1.6rem;
@@ -369,7 +370,7 @@ main {
 .bitcoin-img-container {
     width: 100%;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 700px;
     height: 72.5vh;
     margin: 0 auto;
     background-image: url('./assets/img/bitcoinbaby2x.jpg');
@@ -392,7 +393,7 @@ main {
 .main-plains-container {
     width: 100%;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 700px;
     height: auto;
     margin: 0 auto;
     padding: 50px 0px 40px;
@@ -402,7 +403,7 @@ main {
 .plans--tittle {
     width: 90%;
     min-width: 288px;
-    max-width: 350px;
+    max-width: 600px;
     margin: 0 auto;
     padding-bottom: 35px;
 }
@@ -425,14 +426,15 @@ main {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x  proximity;
+    padding: 0 10px;
 }
 .plans-container--card {
     scroll-snap-align: center;
     width: 60%;
-    min-width: 190;
-    max-width: 320;
+    min-width: 190px;
+    max-width: 320px;
     height: auto;
-    margin: 2rem 15px 20px;
+    margin: 2rem 10px 20px;
     padding: 0px 15px 24px;
     background-color: var(--just-white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -481,14 +483,13 @@ main {
     margin: 10px 0px 16px;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    line-height: 1.5rem;
+    line-height: 15px;
     font-weight: 500;
     color: #757575;
 }
 .plans-container--card button {
     width: 90%;
-    min-width: 151px;
-    max-width: 180px;
+    width: 151px;
     height: 48px;
     padding: 10px 6px;
     font-size: 14px;
@@ -519,7 +520,7 @@ footer {
     display: flex;
     width: 100%;
     min-width: 320px;
-    max-width: 450px;
+    max-width: 700px;
     height: 150px;
     margin: 0 auto;
     background-color: var(--bitcoin-orange);
