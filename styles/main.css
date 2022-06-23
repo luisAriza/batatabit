@@ -123,7 +123,7 @@ main {
   display: grid;
   grid-template-rows: repeat(4, auto) 0;
   gap: 36px;
-  padding-top: 60px;
+  padding: 60px 0 8px;
   text-align: center;
   background-color: var(--off-white);
 }
@@ -220,10 +220,10 @@ table img {
   text-align: center;
   color: var(--black);
 }
-.batata {
+.exchange__batata {
   justify-self: center;
   position: relative;
-  top: -10px;
+  top: -4px;
 }
 
 /* Section #2 */
@@ -241,82 +241,64 @@ table img {
   line-height: 2.6rem;
   color: var(--just-white);
 }
-.product__description {
+.product__description,
+.product__card-description {
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 500;
   color: var(--warm-grey);
 }
-.product p {
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  font-weight: 500;
-  color: var(--warm-grey);
-}
-.product-cards--container {
-  min-width: 288px;
-  max-width: 90vw;
+.cards-container {
+  display: grid;
+  gap: 24px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 8px;
   text-align: start;
 }
-/* Cards */
-.product-cards--container .product-detail--card {
-  min-width: 288px;
-  max-width: 740px;
-  height: auto;
-  margin: 0 auto 16px;
-  padding: 14px 14px 22px 1.6rem;
+.product__card {
+  width: 100%;
+  padding: 14px 16px 22px;
+  border-radius: 4px;
   background-color: var(--black);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-}
-.product-cards--container .icon-card {
-  display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: right;
+  background-repeat: no-repeat;
 }
-.product-cards--container .clock {
+.clock {
   background-image: url("../assets/icons/clock.svg");
 }
-.product-cards--container .eye {
+.eye {
   background-image: url("../assets/icons/eye.svg");
 }
-.product-cards--container .dollar-sign {
+.dollar-sign {
   background-image: url("../assets/icons/dollar-sign.svg");
 }
-.product-cards--container .check-circle {
+.check-circle {
   background-image: url("../assets/icons/check-circle.svg");
 }
-.product-cards--container .product--card-tittle {
-  margin: 10px 1px;
+.product__card-title {
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px var(--bitcoin-orange);
   font-size: 1.8rem;
-  line-height: 1.8rem;
   font-weight: 500;
   color: var(--just-white);
 }
 
 /* Section #3 */
-.bitcoin-img-container {
-  min-width: 320px;
-  max-width: 100vw;
-  height: 72.5vh;
-  margin: 0 auto;
-  background-image: url("../assets/img/bitcoinbaby2x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+.bitcoin-bg {
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/img/bitcoinbaby2x.webp");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.bitcoin-img-container h2 {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 62.5px;
+.bitcoin__title {
+  padding-top: 60px;
   font-size: 2.4rem;
   font-weight: 700;
-  line-height: 2.6rem;
   text-align: center;
   color: var(--just-white);
 }
