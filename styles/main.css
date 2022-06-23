@@ -79,7 +79,7 @@ header {
   place-items: center;
   width: 100%;
   height: 320px;
-  padding: 28px;
+  padding: 24px;
   text-align: center;
   background: linear-gradient(207.8deg, #201e1c 25.69%, #1dbeda 100%);
 }
@@ -117,45 +117,27 @@ main {
   height: auto;
 }
 /* Section #1 */
-.exchange-container {
-  height: auto;
-  margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 3.5rem;
+.exchange {
+  display: grid;
+  grid-template-rows: 240px 80px 100px auto 0;
+  padding: 60px 0 48px;
   text-align: center;
   background-color: var(--off-white);
 }
-.exchange-container--tittle {
-  min-width: 288px;
-  max-width: 90vw;
-  margin: 0 auto;
-  margin-bottom: 45px;
-}
-.exchange-container .background-img {
-  width: 20rem;
-  height: 20rem;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  background-image: url("../assets/img/bitcoin.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.exchange-container h2 {
-  margin-bottom: 25px;
+.exchange__title {
+  padding: 0 20px;
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 2.6rem;
   color: var(--black);
 }
-.exchange-container p {
-  margin-bottom: 30px;
+.exchange__description {
+  padding: 0 20px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #525252;
 }
-
 /* tables */
 .tables-slider {
   display: flex;
@@ -280,11 +262,10 @@ main {
   color: var(--black);
   text-align: center;
 }
-.main-exchange-container .batata {
-  position: absolute;
-  left: calc(50% - 2rem);
-  display: block;
-  margin-top: 2.5rem;
+.batata {
+  position: relative;
+  justify-self: center;
+  top: 36px;
   width: 4rem;
   height: 2.4rem;
   background-image: url("../assets/batata.svg");
