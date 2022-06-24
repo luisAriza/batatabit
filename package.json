@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel -p 2664",
-    "build": "rm -rf dist && parcel --no-source-maps --public-url .",
+    "build": "rm -rf dist && parcel build --no-source-maps --public-url .",
     "deploy": "gh-pages -d dist"
   },
   "repository": {

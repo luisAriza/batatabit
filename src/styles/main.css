@@ -4,34 +4,27 @@
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
-  font-diplay: swap;
-  src: url("./fonts/DMSans-Regular.woff2") format("woff2"),
-    url("./fonts/DMSans-Regular.woff") format("woff");
+  font-display: swap;
+  src: url("../assets/fonts/DMSans-Regular.woff2") format("woff2"),
+    url("../assets/fonts/DMSans-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
-  font-diplay: swap;
-  src: url("./fonts/DMSans-Medium.woff2") format("woff2"),
-    url("./fonts/DMSans-Medium.woff") format("woff");
+  font-display: swap;
+  src: url("../assets/fonts/DMSans-Medium.woff2") format("woff2"),
+    url("../assets/fonts/DMSans-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
-  font-weight: 800;
-  font-diplay: swap;
-  src: url("./fonts/DMSans-Bold.woff2") format("woff2"),
-    url("./fonts/DMSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/DMSans-Bold.woff2") format("woff2"),
+    url("../assets/fonts/DMSans-Bold.woff") format("woff");
 }
 
-/*
-    1. Posicionamiento
-    2. Modelo de caja (Box Model)
-    3. Tipografia
-    4. Visuales
-    5. Otros
-*/
 :root {
   /* Colores */
   --bitcoin-orange: #f7931a;
@@ -43,9 +36,10 @@
   --black: #282623;
   --grey: #bababa;
   --warm-grey: #b8b8b8;
-  --off-white: #faf8f7;
+  --off-white: #f3f3f3;
   --just-white: #ffffff;
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -60,23 +54,25 @@ html {
 /* header */
 header {
   display: grid;
-  grid-template-rows: auto 80px auto;
-  place-items: center;
+  grid-template-rows: repeat(3, auto) 0;
+  justify-items: center;
+  gap: 32px;
   width: 100%;
-  height: 320px;
-  padding: 24px;
+  padding: 40px 20px 28px;
   text-align: center;
-  background: linear-gradient(207.8deg, #201e1c 25.69%, #1dbeda 100%);
+  background: linear-gradient(207.8deg, #282623 25%, #f7931a 120%);
 }
 .header__title {
+  max-width: 400px;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 2.6rem;
   color: var(--just-white);
 }
 .header__description {
+  max-width: 360px;
   font-size: 1.4rem;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.8rem;
   color: var(--soft-orange);
 }
@@ -84,16 +80,18 @@ header {
   display: flex;
   align-items: center;
   gap: 8px;
+  height: 52px;
   padding: 16px 20px;
   font-size: 1.4rem;
   font-weight: 700;
-  position: absolute;
-  top: 30rem;
+  text-shadow: 0 0 8px var(--primary-color);
+  letter-spacing: 0.5px;
   border-radius: 4px;
   text-decoration: none;
-  color: var(--warm-black);
-  background-color: var(--off-white);
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  cursor: pointer;
+  color: var(--just-white);
+  background-color: var(--black);
+  box-shadow: 0px 4px 12px rgba(41, 39, 36, 0.536);
 }
 
 /* main */
@@ -111,13 +109,17 @@ main {
   background-color: var(--off-white);
 }
 .exchange__title {
+  justify-self: center;
+  max-width: 360px;
   padding: 0 20px;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 2.6rem;
-  color: var(--black);
+  color: var(--warm-black);
 }
 .exchange__description {
+  justify-self: center;
+  max-width: 360px;
   padding: 0 20px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -126,24 +128,24 @@ main {
 }
 .table-slider {
   display: flex;
-  gap: 32px;
+  gap: 28px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  padding: 0 20px;
+  padding: 0 28px;
 }
 .table-slider::-webkit-scrollbar {
   display: none;
 }
 .table-container {
   padding-bottom: 24px;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   scroll-snap-align: center;
 }
 .table__title {
   font-family: "DM Sans", sans-serif;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .table__title--currency {
   color: var(--primary-color);
@@ -152,8 +154,6 @@ main {
   color: var(--secondary-blue);
 }
 .table {
-  display: grid;
-  place-items: center;
   min-width: 240px;
   width: 100%;
   max-width: 300px;
@@ -225,10 +225,16 @@ table img {
   background-color: var(--warm-black);
 }
 .product__title {
+  justify-self: center;
+  max-width: 360px;
   font-size: 2.4rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 2.6rem;
   color: var(--just-white);
+}
+.product__description {
+  justify-self: center;
+  max-width: 320px;
 }
 .product__description,
 .product__card-description {
@@ -241,6 +247,7 @@ table img {
   display: grid;
   gap: 24px;
   width: 100%;
+  max-width: 850px;
   margin: 0 auto;
   padding-top: 8px;
   text-align: start;
@@ -248,7 +255,7 @@ table img {
 .product__card {
   width: 100%;
   padding: 14px 16px 22px;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: var(--black);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   background-size: contain;
@@ -302,6 +309,8 @@ table img {
   background-color: var(--off-white);
 }
 .plans__title {
+  justify-self: center;
+  max-width: 400px;
   padding: 0 20px;
   font-size: 2.4rem;
   line-height: 2.6rem;
@@ -309,6 +318,7 @@ table img {
   color: var(--warm-black);
 }
 .plans__description {
+  justify-self: center;
   padding: 0 20px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -316,11 +326,11 @@ table img {
 }
 .plans-slider {
   display: flex;
-  gap: 20px;
+  gap: 28px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  padding: 12px 20px 0;
+  padding: 12px 28px 0;
 }
 .plans-slider::-webkit-scrollbar {
   display: none;
@@ -329,20 +339,21 @@ table img {
   scroll-snap-align: center;
   width: 60%;
   min-width: 200px;
-  max-width: 320px;
+  max-width: 240px;
   margin: 20px 0;
   padding: 0 20px 24px;
   border-radius: 8px;
   background-color: var(--just-white);
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
 }
+
 .plans__card-title {
   width: 120px;
   margin: 0 auto;
   padding: 8px;
   position: relative;
   bottom: 16px;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 8px;
@@ -359,19 +370,19 @@ table img {
   position: relative;
   bottom: 32px;
   right: 4px;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--warm-black);
 }
 .plans__card-price strong {
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 5.2rem;
-  letter-spacing: -0.08em;
+  letter-spacing: -0.05em;
 }
 .plans__card-promo {
   margin: 10px 0px 16px;
-  font-family: "Helvetica", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 12px;
   line-height: 15px;
   font-weight: 500;
@@ -381,12 +392,15 @@ table img {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
   gap: 8px;
   width: 100%;
+  height: 48px;
   padding: 10px 8px;
   font-size: 1.4rem;
   font-weight: 700;
   border-radius: 4px;
+  cursor: pointer;
   border: 2px solid var(--bitcoin-orange);
   color: var(--warm-black);
   background-color: var(--off-white);
@@ -425,13 +439,67 @@ footer ul {
   text-decoration: none;
   color: var(--just-white);
 }
-@media (min-width: 675px) {
-  .tables-slider {
-    overflow-x: auto;
+
+@media (min-width: 564px) {
+  .table-slider {
     justify-content: center;
   }
-  .plans-container--slider {
-    overflow-x: auto;
+}
+
+@media (min-width: 640px) {
+  .header__title {
+    max-width: 520px;
+    font-size: 3.2rem;
+    line-height: 2.8rem;
+  }
+  .header__description {
+    font-size: 1.6rem;
+  }
+  .exchange {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto) 0;
+    align-items: center;
+    gap: 28px;
+  }
+  .exchange__img {
+    grid-row: 1 / span 2;
+    grid-column: 1 / 2;
+    justify-self: end;
+    padding-right: 64px;
+  }
+  .exchange__title {
+    grid-column: 2 / 3;
+    align-self: end;
+    justify-self: start;
+    padding: 0;
+    width: 280px;
+  }
+  .exchange__description {
+    grid-column: 2 / 3;
+    place-self: start;
+    padding: 0;
+    width: 280px;
+    font-size: 1.5rem;
+  }
+  .table-slider {
+    grid-column: 1 / span 2;
+    gap: 88px;
+  }
+  .exchange__batata {
+    grid-column: span 2;
+    top: 8px;
+  }
+  .cards-container {
+    grid-template-columns: repeat(2, auto);
+    padding-bottom: 20px;
+  }
+  .bitcoin-bg {
+    display: none;
+  }
+}
+
+@media (min-width: 832px) {
+  .plans-slider {
     justify-content: center;
   }
 }
