@@ -1,0 +1,25 @@
+{
+  "name": "responsive_design-batatabit",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel -p 2664",
+    "build": "rm -rf dist && parcel --no-source-maps --public-url .",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisAriza/responsive-design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisAriza/responsive-design/issues"
+  },
+  "homepage": "https://github.com/luisAriza/responsive-design#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

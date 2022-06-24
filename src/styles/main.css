@@ -5,41 +5,24 @@
   font-style: normal;
   font-weight: 400;
   font-diplay: swap;
-  src: url("./fonts/DMSans/DMSans-Regular.woff2") format("woff2"),
-    url("./fonts/DMSans/DMSans-Regular.woff") format("woff");
+  src: url("./fonts/DMSans-Regular.woff2") format("woff2"),
+    url("./fonts/DMSans-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-diplay: swap;
-  src: url("./fonts/DMSans/DMSans-Medium.woff2") format("woff2"),
-    url("./fonts/DMSans/DMSans-Medium.woff") format("woff");
+  src: url("./fonts/DMSans-Medium.woff2") format("woff2"),
+    url("./fonts/DMSans-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 800;
   font-diplay: swap;
-  src: url("./fonts/DMSans/DMSans-Bold.woff2") format("woff2"),
-    url("./fonts/DMSans/DMSans-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-diplay: swap;
-  src: url("./fonts/Inter/Inter-Thin.woff2") format("woff2"),
-    url("./fonts/Inter/Inter-Thin.woff") format("woff");
-}
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-diplay: swap;
-  src: url("./fonts/Inter/Inter-Medium.woff2") format("woff2"),
-    url("./fonts/Inter/Inter-Medium.woff") format("woff");
+  src: url("./fonts/DMSans-Bold.woff2") format("woff2"),
+    url("./fonts/DMSans-Bold.woff") format("woff");
 }
 
 /*
@@ -154,7 +137,7 @@ main {
 }
 .table-container {
   padding-bottom: 24px;
-  font-family: "Inter", sans-serif;
+  font-family: "Helvetica", sans-serif;
   scroll-snap-align: center;
 }
 .table__title {
@@ -359,7 +342,7 @@ table img {
   padding: 8px;
   position: relative;
   bottom: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   border-radius: 8px;
@@ -376,19 +359,19 @@ table img {
   position: relative;
   bottom: 32px;
   right: 4px;
-  font-family: "Inter", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
   color: var(--warm-black);
 }
 .plans__card-price strong {
-  font-family: "Inter", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 5.2rem;
   letter-spacing: -0.08em;
 }
 .plans__card-promo {
   margin: 10px 0px 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 15px;
   font-weight: 500;
