@@ -254,7 +254,7 @@ table img {
 }
 .product__card {
   width: 100%;
-  padding: 14px 16px 22px;
+  padding: 16px 20px 20px 16px;
   border-radius: 6px;
   background-color: var(--black);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -275,8 +275,8 @@ table img {
   background-image: url("../assets/icons/check-circle.svg");
 }
 .product__card-title {
-  margin-bottom: 10px;
-  text-shadow: 0 0 5px var(--bitcoin-orange);
+  margin-bottom: 6px;
+  text-shadow: 0 0 4px var(--bitcoin-orange);
   font-size: 1.8rem;
   font-weight: 500;
   color: var(--just-white);
@@ -491,7 +491,8 @@ footer ul {
   }
   .cards-container {
     grid-template-columns: repeat(2, auto);
-    padding-bottom: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 8px 8px 20px;
   }
   .bitcoin-bg {
     display: none;
