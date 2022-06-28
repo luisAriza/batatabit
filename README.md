@@ -1,6 +1,6 @@
 # Batatabit: Bitcoin Page
 
-Esta es una maqueta de la pagina [**Batatabit**](https://luisariza.github.io/batatabit/) hecha con <ins>HTML</ins> y <ins>CSS</ins> puro, aplicando **breakpoints** para poder verlo en mobile, tablet y desktop.
+Esta es una maqueta de la pagina [Batatabit](https://luisariza.github.io/batatabit/) hecha con <ins>HTML</ins> y <ins>CSS</ins> puro, aplicando **breakpoints** para poder verlo en mobile, tablet y desktop.
 
 Se integró la herramienta de [**Parcel**](https://parceljs.org/) para automatizar y optimizar el codigo.
 
